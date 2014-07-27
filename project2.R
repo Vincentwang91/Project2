@@ -16,3 +16,6 @@ Total <- anwser1[order(anwser1,decreasing=TRUE)][1]
 Deathmax10 <- Death[order(Death,decreasing=T)][1:10]
 Injuriesmax10 <- Injures[order(Injures,decreasing=T)][1:10]
 Totalmax10 <- Total[order(Total,decreasing=T)][1:10]
+
+Summary <- cbind("Death"=Death,"Injuries"=Injures,"Total"=Total)
+Summary <- Summary[order(Summary[,3],decreasing=T),]
